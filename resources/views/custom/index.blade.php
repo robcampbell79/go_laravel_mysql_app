@@ -11,10 +11,6 @@
 
   var_dump($data);
 
-  // foreach($data as $key => $val) {
-  //   echo $val . "<br>";
-  // }
-
   echo "<br><br>";
 
   $end = microtime(true) - $begin;
