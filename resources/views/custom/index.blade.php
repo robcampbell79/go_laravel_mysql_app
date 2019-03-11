@@ -6,14 +6,10 @@
 <br><br>
 
 <h2>Some Random Numbers</h2>
-<?php
-  $begin = microtime(true);
 
-  var_dump($data);
-
-  echo "<br><br>";
-
-  $end = microtime(true) - $begin;
-
-  echo "Page loads up in: " . $end;
- ?>
+<table class="table table-striped">
+  <tr><th>Number</th></tr>
+  <?php foreach($data as $result): ?>
+    <tr><td><?php echo $result['Number']; ?></td></tr>
+  <?php endforeach; ?>
+</table>
