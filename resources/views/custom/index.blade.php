@@ -9,7 +9,7 @@
 
 <table class="table table-striped">
   <tr><th>Number</th></tr>
-  <?php foreach($data as $result): ?>
-    <tr><td><?php echo $result['Number']; ?></td></tr>
-  <?php endforeach; ?>
+  @foreach($data as $result)
+    <tr><td>{{$result['Number']}}</td></tr>
+  @endforeach
 </table>
